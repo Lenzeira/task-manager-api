@@ -1,0 +1,15 @@
+erDiagram
+    USERS ||--o{ TASKS : owns
+    USERS {
+        int id PK
+        string username
+        string email
+        string password
+    }
+    TASKS {
+        int id PK
+        string title
+        string description
+        string status
+        int owner_id FK
+    }
